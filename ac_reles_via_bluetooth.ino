@@ -1,4 +1,5 @@
 /* 
+Acionamento de Modulo Reles via Modulo Bluetooth
 Conectividade c/ Bluetooth:
 Hardware(HW)
 Módulo Bluetooth (HC-05)
