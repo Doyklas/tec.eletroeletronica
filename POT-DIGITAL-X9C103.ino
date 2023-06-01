@@ -1,7 +1,7 @@
-// Pinos do potenciômetro digital X9C103
+// Pinos do potenciÃ´metro digital X9C103
 #define INC_PIN  2      // Pino de incremento (INC)
-#define UD_PIN   3      // Pino de direção (U/D)
-#define CS_PIN   4      // Pino de seleção de chip (CS)
+#define UD_PIN   3      // Pino de direÃ§Ã£o (U/D)
+#define CS_PIN   4      // Pino de seleÃ§Ã£o de chip (CS)
 
 int valor = 0;  // Valor inicial
 
@@ -10,7 +10,7 @@ void setup() {
   pinMode(UD_PIN, OUTPUT);
   pinMode(CS_PIN, OUTPUT);
 
-  // Configurar o potenciômetro para incrementar
+  // Configurar o potenciÃ´metro para incrementar
   digitalWrite(UD_PIN, HIGH);
 
   // Selecionar o chip
@@ -27,11 +27,11 @@ void setup() {
   // Deselecionar o chip
   digitalWrite(CS_PIN, HIGH);
 
-  Serial.begin(9600);  // Inicializar a comunicação serial
+  Serial.begin(9600);  // Inicializar a comunicaÃ§Ã£o serial
 }
 
 void loop() {
-  // Ler o valor do potenciômetro
+  // Ler o valor do potenciÃ´metro
   Serial.print("Valor atual: ");
   Serial.println(valor);
 
