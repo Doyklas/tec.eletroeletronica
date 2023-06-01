@@ -6,10 +6,10 @@
 
 int valordoblue;
 
-// Pinos do potenciÙmetro digital X9C103
+// Pinos do potenci√¥metro digital X9C103
 #define INC_PIN  2      // Pino de incremento (INC)
-#define UD_PIN   3      // Pino de direÁ„o (U/D)
-#define CS_PIN   4      // Pino de seleÁ„o de chip (CS)
+#define UD_PIN   3      // Pino de dire√ß√£o (U/D)
+#define CS_PIN   4      // Pino de sele√ß√£o de chip (CS)
 
 int valor = 0;  // Valor inicial
 
@@ -18,10 +18,10 @@ void setup()
 
 {
   // Iniciar a Serial
-  Serial.begin(9600); //InÌcio da serial do bluetooth
+  Serial.begin(9600); //In√≠cio da serial do bluetooth
 
  // Pinos dos reles 1-4 
-  pinMode(rele1, OUTPUT); //Ligando a saÌda dos reles
+  pinMode(rele1, OUTPUT); //Ligando a sa√≠da dos reles
   pinMode(rele2, OUTPUT);
   pinMode(rele3, OUTPUT);
   pinMode(rele4, OUTPUT);
@@ -30,7 +30,7 @@ void setup()
   digitalWrite(rele3,HIGH);
   digitalWrite(rele4,HIGH);
 
-// Pinos do potenciÙmetro digital X9C103
+// Pinos do potenci√¥metro digital X9C103
   pinMode(INC_PIN, OUTPUT);
   pinMode(UD_PIN, OUTPUT);
   pinMode(CS_PIN, OUTPUT);
@@ -69,7 +69,7 @@ void loop() {
   }
 
 // Funcionamento dos reles
- if (valordoblue=='A') //Leitura dos valores para saber se deve acender ou n„o o LED
+ if (valordoblue=='A') //Leitura dos valores para saber se deve acender ou n√£o o LED
  {
   digitalWrite (rele1,HIGH);
   }
